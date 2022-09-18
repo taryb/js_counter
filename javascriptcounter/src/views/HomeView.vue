@@ -19,3 +19,17 @@ export default {
   }
 
 </script>
+
+<style>
+  div{
+    margin-bottom: 10px;
+  }
+  .counter{
+    font-size: 80px;
+  }
+  .button button{
+    font-size: 40px;
+    width: 100px;
+    margin: 0 10px;
+  }
+</style>
