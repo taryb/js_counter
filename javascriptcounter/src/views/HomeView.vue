@@ -3,11 +3,11 @@
     <img alt="Vue logo" src="../assets/logo.png">
   </div>
   <div class="counter">
-    0
+    {{ counter }}
   </div>
   <div class="button">
-    <button>-</button>
-    <button>+</button>
+    <button @click="decreaseCount">-</button>
+    <button @click="increaseCount">+</button>
   </div>
 </template>
 
@@ -16,6 +16,20 @@
 
 export default {
   name: 'HomeView',
+  data(){
+    return{
+      counter: 0
+    }
+  },
+  methods:{
+    increaseCount(){
+      this.counter++;
+    },
+    decreaseCount(){
+      this.counter--;
+    }
+
+  }
   }
 
 </script>
